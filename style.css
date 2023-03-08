@@ -1,11 +1,11 @@
 body {
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
 }
 
 .container {
     height: 100vh;
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content:center ;
     align-items:center ;
@@ -20,7 +20,8 @@ body {
     align-items:center ;
     margin:auto ;
     border: 1px solid #000;
-
+    padding: 60px;;
+    
 }
 
 form{
@@ -32,17 +33,20 @@ form{
 }
 
 .circle{
-    width:100px ;
-    height:100px ;
-    border-radius: 50%;
-    border-bottom: 20px;
-    border: 1px solid #000;
+    height: 200px;
+    width: 200px;
+    background-image: url("https://www.apple.com/newsroom/images/values/corporate/Apple_google-partner-on-covid-19-contact-tracing-technology_04102020_LP_hero.jpg.og.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+      
 }
 
 label {
-   align-self:flex-start ;
-    margin-bottom: 5px;
-
+    align-self:flex-start ;
+    margin-bottom: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
 } 
 
 
@@ -53,7 +57,7 @@ input{
     border:1px solid #000;
     padding: 0;
     margin-bottom:  10px;
-
+    border-radius: 8px;
 
 }
 button{
@@ -63,5 +67,11 @@ button{
     background-color:transparent ;
     border:1px solid #000 ;
     outline:none ;
-    margin-top: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px black;
+    
+}
+button:hover{
+    background-color:grey;
 }
