@@ -1,16 +1,12 @@
-const fs = require ('fs')
-const http = require ('http')
-
-const requestServer = (req,res)=>{
-    const dataHtml = fs.readFileSync('./index.html')
-    res.end(dataHtml.toString())
-
-}
-const server = http.createServer(requestServer)
-
+const { request } = require("express")
+const express = require ("express")
+const app = express()
 const port = 3000
 
-server.listen( port, () => {
-    console.log(`Server running at http://localhost:${port}/`)}
-    )
+
+
+app.get("/",(req,res) => {res.sendFile(__dirname +"/index.html")})
+
+app.listen(port,()=> {console.log(`runing at port ${port} `)})
+
 
